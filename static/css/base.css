@@ -1,0 +1,45 @@
+:root {
+    /* 相框外面border的颜色 */
+    --img-frame-color: #343434;
+    /* 相框的背景颜色   */
+    --img-frame-bg-color: #001323;
+    /* 图片边框颜色 */
+    --img-border-color: #0c2031;
+
+}
+
+.frame-shadow {
+    position: relative;
+    padding: 2em;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
+}
+
+.img-frame {
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--img-frame-color);
+    border-radius: 36px;
+    background-color: var(--img-frame-bg-color);
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--img-border-color);
+    background-color: transparent;
+}
+
+.img-container > img {
+    max-width:100%;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 0%;
+}
+
+.main-container {
+    width: 60%;
+    margin: 24px auto;
+}
