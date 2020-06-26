@@ -23,5 +23,5 @@ from apps.blog.views import Index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
-    # re_path(r"static/(?P<path>.*)$", static.serve, {'document_root':settings.STATIC_ROOT}, name="static")
+    re_path(r"static/(?P<path>.*)$", static.serve, {'document_root':settings.STATIC_ROOT}, name="static")
 ]
